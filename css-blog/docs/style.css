@@ -3,6 +3,7 @@ html{
     color: #dcdcdc;
     text-align: center;
     font-size: 1.15rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -19,14 +20,17 @@ a{
 
 h3{
     color: #ff769d;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2{
     color: #ff5585;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1{
     color: #ff0048;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 article{
@@ -46,6 +50,7 @@ nav{
 }
 
 ul {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
