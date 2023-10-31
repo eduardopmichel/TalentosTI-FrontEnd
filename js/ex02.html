@@ -16,9 +16,10 @@
     titulo.innerText='Blog 2023';
     titulo.style.backgroundColor='cyan';
     titulo.style.color='black';
-
-    let texto = document.querySelector("div")
-    texto.innerText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic reiciendis consequuntur illo laboriosam. Error, aut, libero ab eaque quibusdam distinctio beatae consectetur quisquam eligendi reiciendis sequi. Ex, et molestias!"
-    document.body.appendChild(texto)
+    
+    let texto = document.createElement("p");
+    texto.innerText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic reiciendis consequuntur illo laboriosam. Error, aut, libero ab eaque quibusdam distinctio beatae consectetur quisquam eligendi reiciendis sequi. Ex, et molestias!";
+    document.body.appendChild(texto);
+    texto.style.fontSize= "10px";
 </script>
 </html>

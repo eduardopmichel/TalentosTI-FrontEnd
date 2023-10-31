@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Palavra: <input id="txt" type="text" name="txt">
+        <input id="bt1" type="button" name="bt02" value="Gerar robô">
+    </div>
+    <div>
+        <input id="bt2" type="button" name="bt02" value="Gerar robô aleatório">
+    </div>
+    <img>
+    
+    <script>
+        const botao1 = document.getElementById('bt1');
+        botao1.addEventListener('click', function() {
+            const texto = document.getElementById('txt').value;
+            gerarRobo(texto)
+        });
+
+        const botao2 = document.getElementById('bt2');
+        botao2.addEventListener('click', function() {
+            gerarRobo(Math.random())
+        });
+
+        function gerarRobo(parametro) {
+        let imgRobo = document.querySelector('img');
+        imgRobo.src="https://robohash.org/"+parametro;
+    }
+    </script>
+</body>
+</html>
