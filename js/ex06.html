@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Palavra: <input id="txt" type="text" name="txt">
+        Altura: <input id="heighttxt" type="text" name="height"></p>
+        Largura: <input id="widthtxt" type="text" name="width">
+        <input id="bt1" type="button" name="bt01" value="Gerar robô">
+        <input id="bt2" type="button" name="bt02" value="Gerar robô aleatório">
+    </div>
+    <div>
+        <p>Robô</p><img id="img1">
+        <p>Robô aleatório</p><img id="img2">
+    </div>
+
+    <script>
+        const botao1 = document.getElementById('bt1');
+        const botao2 = document.getElementById('bt2');
+        const img1 = document.getElementById('img1');
+        const img2 = document.getElementById('img2');
+
+        botao1.addEventListener('click', function() {
+            const texto = document.getElementById('txt').value;
+            const height = document.getElementById('heighttxt').value;
+            const width = document.getElementById('widthtxt').value;
+            img1.src = `https://robohash.org/${texto}?size=${width}x${height}`;
+        });
+
+        botao2.addEventListener('click', function() {
+            const height = document.getElementById('heighttxt').value;
+            const width = document.getElementById('widthtxt').value;
+            img2.src = `https://robohash.org/${Math.random()}?size=${width}x${height}`;
+        });
+    </script>
+</body>
+</html>
